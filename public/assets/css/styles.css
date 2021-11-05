@@ -1,0 +1,449 @@
+body{
+    width: 1070px;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+header figure{
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    margin: 0;
+}
+
+header figure figcaption{
+    font-family: Nunito;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #3E3F43;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+header nav a{
+    font-family: Nunito;
+    font-size: 16px;
+    color: #222222;
+    text-decoration: none;
+}
+
+header nav a.active{
+    color: #DAA520;
+}
+
+header nav a.button{
+    border: 1px solid #3E3F43;
+    border-radius: 8px;
+    width: 137px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+section#main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section#main div p{
+    font-family: Nunito;
+    font-size: 35px;
+    color: #3E3F43;
+}
+
+section#main div h1{
+    font-family: Nunito;
+    font-size: 72px;
+    color: #313235;
+}
+
+section#main div a.button{
+    border: none;
+    background-color: #DAA520;
+    border-radius: 4px;
+    width: 175px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+}
+
+section#about header{
+    display: grid;
+    grid-template-columns: 250px auto 380px;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+section#about header figure figcaption,
+section#how header figure figcaption,
+section#categories header figure figcaption,
+section#testimony header figure figcaption{
+    font-family: Nunito;
+    font-size: 36px;
+    color: #3E3F43;
+}
+
+section#about header h2,
+section#how header h2,
+section#categories header h2,
+section#testimony header h2{
+    font-family: Nunito;
+    font-size: 72px;
+    color: rgba(34, 34, 34, 0.1);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+div.line{
+    border-bottom: 1px solid black;
+}
+
+section#about article.woodies{
+    display: grid;
+    grid-template-columns: 430px 450px;
+    column-gap: 80px;
+    margin-bottom: 40px;
+}
+
+section#about article.woodies img{
+    justify-self: end;
+    width: 390px;
+    height: 310px;
+}
+
+section#about article.woodies div{
+    place-self: center;
+}
+
+section#about article.woodies div header{
+    display: block;
+    font-family: Nunito;
+    font-size: 36px;
+    margin: 0px;
+    color: #3E3F43;
+}
+
+section#about article.woodies div p{
+    font-family: Nunito;
+    font-size: 24px;
+    color: black;
+}
+
+section#about article.made{
+    display: grid;
+    grid-template-columns: auto 290px;
+    column-gap: 115px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 145px;
+}
+
+section#about article.made div header{
+    display: block;
+    font-family: Nunito;
+    font-size: 36px;
+    margin: 0px;
+    color: black;
+}
+
+section#about div{
+    align-self: center;
+}
+
+section#about article.made div p{
+    font-family: Nunito;
+    font-size: 24px;
+    color: black;
+}
+
+section#about article.made img{
+    width: 290px;
+    height: 385px;
+}
+
+section#how header,
+section#categories header,
+section#testimony header{
+    display: grid;
+    grid-template-columns: 300px auto 580px;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+
+section#how div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+section#how div article img{
+    height: 120px;
+}
+
+section#how div article h4{
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+section#how a.button{
+    border: none;
+    background-color: #DAA520;
+    border-radius: 4px;
+    width: 215px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 470px;
+    margin-top: 65px;
+}
+
+section#categories div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+}
+
+section#categories div article{
+    display: grid;
+    grid-template-rows: 80px 240px 80px;
+}
+
+section#categories div article h4{
+    font-family: Nunito;
+    font-size: 24px;
+    color: #3E3F43;
+}
+
+section#categories div article img{
+    justify-self: center;
+}
+
+section#categories div article img.M{
+    justify-self: start;
+}
+
+section#categories div article a{
+    justify-self: end;
+    align-self: center;
+    border: 1px solid #3E3F43;
+    border-radius: 4px;
+    width: 100px;
+    height: 20px;
+    font-family: Nunito;
+    font-size: 18px;
+    color: #3E3F43;
+    text-decoration: none;
+    padding: 10px;
+}
+
+section#testimony div.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+section#testimony div.content img.img{
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    width: 240px;
+    height: 360px;
+}
+
+section#testimony div.content div.group{
+    display: grid;
+    grid-template-rows: 280px 45px;
+}
+
+section#testimony div.content div.group div.group1{
+    border: 1px solid #A8DCEC;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    height: 280px;
+    grid-template-rows: 80px 100px auto,;
+    padding-left: 10px;
+}
+
+section#testimony div.content div.group div.group1 img.star{
+    align-self: end;
+}
+
+section#testimony div.content div.group div.group1 p{
+    font-family: Nunito;
+    font-size: 14px;
+    color: #3E3F43;
+
+}
+
+section#testimony div.content div.group div.group1 div{
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+
+section#testimony div.content div.group div.group1 div img{
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+section#testimony div.content div.group div.group1 div h5{
+    font-family: Nunito;
+    color: #AFAFAF;
+    font-size: 12px;
+    margin: 0px;
+}
+
+section#testimony div.content div.group div.group2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section#testimony div.content div.group div.group2 a{
+    width: 32px;
+    align-self: center;
+}
+
+section#testimony div.content div.group div.group2 h4.active{
+    font-family: Nunito;
+    font-size: 14px;
+    color: #3E3F43;
+    align-self: end;
+}
+
+section#testimony div.content div.group div.group2 h4{
+    font-family: Nunito;
+    font-size: 14px;
+    color: #C4C4C4;
+    align-self: end;
+}
+
+section#testimony div.L{
+    display: grid;
+    justify-content: end;
+    margin-right: 100px;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+footer div.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+    margin-top: 100px;
+}
+
+footer div.form div{
+    font-family: Nunito;
+    font-size: 18px;
+    color: #000000;
+}
+
+footer div.form form input.email{
+    border: 1px solid #DAA520;
+    border-radius: 4px;
+    height: 40px;
+    width: 355px;
+    font-family: Nunito;
+    font-size: 16px;
+    color: #AFAFAF;
+}
+
+footer div.form form input.submit{
+    background: #DAA520;
+    border-radius: 4px;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    font-family: Nunito;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer div.menu-f ul.menu{
+    display: grid;
+    grid-template-columns: 250px 150px 150px 150px 150px;
+    list-style-type: none;
+}
+
+footer div.menu-f ul.menu li figure{
+display: grid;
+grid-template-columns: 30px auto;
+align-items: center;
+margin-left: 0px;
+margin-bottom: 16px;
+}
+
+footer div.menu-f ul.menu li figure figcaption{
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    color: #3E3F43;
+}
+
+footer div.menu-f ul.menu li address{
+    font-family: Nunito;
+    font-size: 14px;
+    color: #8D8D8D;
+}
+
+footer div.menu-f ul.menu li p.list{
+    font-family: Nunito;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+footer div.menu-f ul.menu li ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer div.menu-f ul.menu li ul li a{
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 14px;
+    color: #8D8D8D;
+}
+
+footer p{
+    justify-self: center;
+    font-family: Nunito;
+    font-size: 12px;
+    color: #8D8D8D;
+}
